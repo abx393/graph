@@ -19,18 +19,19 @@ public class EdgeWeightedGraph {
 	public void addEdge(Edge e) {
 		int v = e.first();
 		int w = e.second(v);
-		//adding the edge to the adjacency list
+     
+		// adding the edge to the adjacency list
 		this.adj[v].add(w);
 		this.adj[w].add(v);
 	}
 	
-	//Depth First Search- traverses each vertex in the graph exactly once
+	// Depth First Search- traverses each vertex in the graph exactly once
 	public void dfs() {
 		boolean[] visited = new boolean[adj.length];
 		dfs(2, visited);
 	}
 	
-	//Depth First Search
+	// Depth First Search
 	public void dfs(int vertex, boolean[] visited) {
 		visited[vertex] = true;
 		System.out.println(vertex);
@@ -40,7 +41,7 @@ public class EdgeWeightedGraph {
 	}
 
 	public static void main(String[] args) {
-		//testing
+		// testing
 		EdgeWeightedGraph g = new EdgeWeightedGraph(5);
 		g.addEdge(new Edge(0, 1, 5));
 		g.addEdge(new Edge(1, 2, 10));

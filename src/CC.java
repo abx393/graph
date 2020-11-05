@@ -45,13 +45,13 @@ public class CC {
 	}
 
 	public static void main(String[] args) {
-		Graph g = new Graph(30); //creates graph with 8 vertices
-		g.randomEdges2(); //adds random edges to the graph
+		Graph g = new Graph(30); // creates graph with 8 vertices
+		g.randomEdges2(); // adds random edges to the graph
 		
 		CC c = new CC(g);
-		g.printEdges(); //prints each edge twice
+		g.printEdges(); // prints each edge twice
 		System.out.print("\nConencted Compenents: ");
 		System.out.println(c.count());
-		c.printID(); //prints id[]  
+		c.printID(); // prints id
 	}
 }

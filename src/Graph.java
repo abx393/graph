@@ -34,7 +34,7 @@ public class Graph {
 		return adj[v];
 	}
 	
-	//graph is fully connected
+	// graph is fully connected
 	public void randomEdges() {
 		for (int i = 0; i < this.V; i++){
 			int rand = new Random().nextInt(V);
@@ -66,7 +66,7 @@ public class Graph {
 		}
 	}
 
-	//Breadth First Search
+	// Breadth First Search
 	public void bfs() {
 		boolean[] visited = new boolean[V];
 		Arrays.fill(visited,  false);
