@@ -53,7 +53,7 @@ public class EdgeWeightedGraph {
 	}
 }
 
-class Edge{
+class Edge {
 	private int v;
 	private int w;
 	private double weight;
